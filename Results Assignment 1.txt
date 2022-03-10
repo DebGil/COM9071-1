@@ -1,0 +1,46 @@
+60-40
+
+dict_keys(['memory', 'steps', 'verbose', 'scaler', 'sampling', 'classifier', 'scaler__copy', 'scaler__with_mean', 'scaler__with_std', 'sampling__enn', 'sampling__n_jobs', 'sampling__random_state', 'sampling__sampling_strategy', 'sampling__smote', 'classifier__algorithm', 'classifier__leaf_size', 'classifier__metric', 'classifier__metric_params', 'classifier__n_jobs', 'classifier__n_neighbors', 'classifier__p', 'classifier__weights'])
+Fitting 3 folds for each of 116 candidates, totalling 348 fits
+{'classifier__n_neighbors': 1, 'classifier__p': 1, 'classifier__weights': 'uniform'} with a score of  0.9522035666131226
+0.9673053636298882
+classification report
+               precision    recall  f1-score   support
+
+           0       0.99      0.98      0.98     26627
+           1       0.67      0.74      0.70      1451
+
+    accuracy                           0.97     28078
+   macro avg       0.83      0.86      0.84     28078
+weighted avg       0.97      0.97      0.97     28078
+
+dict_keys(['memory', 'steps', 'verbose', 'scaler', 'classifier', 'scaler__copy', 'scaler__with_mean', 'scaler__with_std', 'classifier__algorithm', 'classifier__leaf_size', 'classifier__metric', 'classifier__metric_params', 'classifier__n_jobs', 'classifier__n_neighbors', 'classifier__p', 'classifier__weights'])
+Fitting 3 folds for each of 116 candidates, totalling 348 fits
+{'classifier__n_neighbors': 22, 'classifier__p': 2, 'classifier__weights': 'distance'} with a score of  0.9735254851813205
+0.9748557589571907
+classification report
+               precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99     26627
+           1       0.79      0.69      0.74      1451
+
+    accuracy                           0.97     28078
+   macro avg       0.89      0.84      0.86     28078
+weighted avg       0.97      0.97      0.97     28078
+
+
+Test Accuracy Balanced: 0.9673053636298882
+Test Accuracy Imbalanced: 0.9748557589571907
+
+
+Confusion Matrix Balanced [[26091   536]
+ [  382  1069]]
+Confusion Matrix Imbalanced [[26365   262]
+ [  444  1007]]
+ 
+ 
+ [[0.92923285, 0.01908968],
+       [0.01360496, 0.03807251]]
+	   
+	   [[0.93899138, 0.00933115],
+       [0.01581309, 0.03586438]]
